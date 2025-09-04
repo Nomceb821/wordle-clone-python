@@ -59,13 +59,14 @@ def wordle():
                          # remove first occurrence of that letter
                          hidden_letters[hidden_letters.index(guess_word[j])] = None # [None,None, None, "n", "a"] 
                      else:
-                        todays_word[j] = guess_word[j]   # Should be something like ["#", "@", "@", "n", "a"]
+                        todays_word[j] = "-"  # Should be something like ["#", "@", "@", "-", "-"]
                         
-            print("".join(todays_word))   # Output: "#@@na"
+            print("".join(todays_word))   # Output: "#@@--"
         i += 1
 
     if not guessed:
         print(f"You lose! The word was {hidden_word}")
 wordle()
+
 
 
