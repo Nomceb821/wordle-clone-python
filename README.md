@@ -6,7 +6,7 @@ A simple 5-letter word guessing game in Python inspired by Wordle.
 This is a simple command-line Python game where the user has to guess a hidden 5-letter word within a limited number of attempts. After each guess, the program provides feedback:
 
 - `#` – Correct letter in the correct position
-- `*` – Correct letter in the wrong position
+- `@` – Correct letter in the wrong position
 - `-` – Letter not in the word at all
 
 The game logic is inspired by Wordle but implemented in Python using basic loops and string operations. Great for beginners learning conditionals, loops, and string handling.
